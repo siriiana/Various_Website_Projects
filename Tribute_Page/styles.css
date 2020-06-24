@@ -1,0 +1,104 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0%;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    color: floralwhite;
+}
+
+#main {
+    height: 100%;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    background-color: skyblue;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    flex: 1 1 100%;
+}
+
+header {
+    display: flex;
+    flex: 1 1 100px;
+    min-height: 10%;
+    background-color:skyblue;
+    justify-content: baseline;
+    text-align: center;
+    font-size: 28px;
+    padding: 2vw;
+}
+
+.footer {
+    display: flex;
+    flex: 1 1 90px;
+    flex-direction: column;
+    min-height: 15%;
+    background-color: skyblue;
+    text-align: center;
+    font-size: 22px;
+    padding: 0 2vw 2vw 2vw;
+}
+.right {
+    display: flex;
+    flex: 40%;
+    flex-direction: column;
+    align-self: stretch;
+    border-radius: 0 50% 50% 0;
+
+}
+.left {
+    display: flex;
+    flex: 60%;
+    flex-direction: column;
+    align-self: stretch;
+    font-size: 18px;
+
+}
+
+.right-filler-up {
+    flex: 1;
+}
+.right-filler-low {
+    flex: 2;
+}
+.image {
+    display: flex;
+    flex: 5;
+    flex-direction: row;
+}
+
+.image-side {
+    flex: 5%;
+}
+
+#image {
+    max-width: 100%;
+    max-height: 100%;
+    padding: 2vw 2vw 0 2vw;
+    align-content: center;
+    justify-content: center;
+}
+
+#image-caption {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.image-center {
+    background-color: fuchsia;
+}
+
+#tribute-info {
+    padding: 2vw;
+    display: flex;
+    
+}
+a {
+    font-weight: bold;
+    color: fuchsia;
+}
