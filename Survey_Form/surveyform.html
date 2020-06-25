@@ -1,59 +1,123 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
+<style media="all"> 
+    html, body{height:100%;} 
+    #main{
+    min-height:100%;
+    }
+    body, p { margin:0; padding:0}
+</style>
+        <script type="text/javascript" src="javascript.js"></script>
+        <link href="styles.css" rel="stylesheet" type="text/css">
     </head>
 
     <body>
-        <h1>A Survey Form</h1>
-        <p>Thank you for taking the time to answer</p>
-        <form>
-            <label for="name">
-            <p>Name</p>
-            <input type="text" value="Enter your name" required/>
-            </label>
-            <label for="email">
-            <p>Email</p>
-            <input type="text" value="Enter your email" required/>
-            </label>
-            <label for="age">
-            <p>Age (Optional)</p>
-            <input type="text" value="Age"/>
-            </label>
+            <main id="main" class="formbox">
+                <div class="left">
+                </div>
 
-            <label for="mood">
-            <p>Which option best describes your current mood?</p>
-            <select>
-            <optgroup required>
-                <option>Amazing</option>
-                <option>Relatively ok</option>
-                <option>Meh</option>
-                <option>Blue</option>
-                <option>What is the meaning of life?</option>
-            </optgroup>
-            </select>
-            </label>
+                <div class="center">
+                <div id="header">
+                    <h1>A Survey Form</h1>
+                    <p id="plea">Thank you for taking the time to answer</p>
+                </div>
 
-            <p>Would you recommend this survey to a friend?</p>
-            <input type="radio">
-            <input type="radio">
-            <input type="radio">
+                <form id="form" action="" onSubmit="printForm(event)">
+                    
+                    <div class="pinfo">
+                        <div class="item">
+                        <p>Name</p>
+                        <input id="name" type="text" placeholder="Enter your name" required/>
+                        </div>
 
-            <p>What would you like to see improved? (Check all that apply)</p>
-            <input type="checkbox">
-            <input type="checkbox">
-            <input type="checkbox">
-            <input type="checkbox">
-            <input type="checkbox">
-            <input type="checkbox">
-            <input type="checkbox">
+                        <div class="item">
+                        <p>Email</p>
+                        <input id="email" type="text" placeholder="Enter your email" required/>
+                        </div>
 
-            <p>Any comments or suggestions?</p>
-            <textarea></textarea>
+                        <div class="item">
+                        <p>Age (Optional)</p>
+                        <input id="age" type="text" placeholder="Age"/>
+                        </div>
+                    </div>
 
-            <button type="submit">Submit</button>
+                    <div class="dropdown">    
+                        <p>Which option best describes your current mood?</p>
+                        <div class="item">
+                        <select class="mood" id="mood" required>
+                            <option name="mood" value="1">Amazing</option>
+                            <option name="mood" value="2">Relatively ok</option>
+                            <option name="mood" value="3">Meh</option>
+                            <option name="mood" value="4">Blue</option>
+                            <option name="mood" value="5">What is the meaning of life?</option>
+                        </select>
+                        </div>
+                    </div>
+
+                    <div id="recommend">
+                        <p id="header">Would you recommend this survey to a friend?</p>
+                        <input name="recommend" type="radio" value="1">YES</input>
+                        <input name="recommend" type="radio" value="2">Ehh, maybe</input>
+                        <input name="recommend" type="radio" value="3">No</input>
+                    </div>
+
+                    <div id="checkbox" class="checkbox">
+                        <p>What would you like to see improved? (Check all that apply)</p>
+                        
+                        <div class="item">
+                            <input type="checkbox" value="1">Nothing</input>
+                        </div>
+                        <div class="item"> 
+                            <input type="checkbox" value="2">It's just wonderful</input>
+                        </div>
+                        <div class="item">
+                            <input type="checkbox" value="3">Frontend</input>
+                        </div>
+                        <div class="item">
+                            <input type="checkbox" value="4">Colours</input>
+                        </div>
+                        <div class="item">
+                            <input type="checkbox" value="5">Questions</input>
+                        </div>
+                        <div class="item">
+                            <input type="checkbox" value="6">Layout</input>
+                        </div>
+                        <div class="item">
+                            <input type="checkbox" value="7">Everything basically</input>
+                        </div>
+                        <div class="item">
+                            <input type="checkbox" value="8">Do you even have to ask?</input>
+                        </div>
+                        <div class="item">
+                            <input type="checkbox" value="9">Why does multiple pick have absolutes?</input>
+                        </div>
+                    </div>
+
+                    <div id="comment-area">
+                        <p class="comment-area">Any comments or suggestions?</p>
+                        <textarea id="comments" class="comment-area"></textarea>
+                    </div>
+                    <div id="submit" class="button">
+                        <button type="submit">Submit</button>
+                    </div>
+
+                    <div id="footer">
+                        <p>A Practise Form</p>
+                        <p>Submit Prints to Console</p>
+                    </div id="footer">
+                </div>
+
+                <div class="right">
+                </div>
+            
+            </div>
         </form>
 
+        </main>
     </body>
 
 </html>
