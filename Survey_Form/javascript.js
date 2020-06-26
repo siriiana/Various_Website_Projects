@@ -5,7 +5,6 @@ var formSubmit = {name: "", email: "", age: "", mood: "", recommend: "", improve
 function printForm(event) {
     event.preventDefault();
 
-    if (!null) {
     formSubmit.name = document.getElementById('name').value;
     
     formSubmit.email = document.getElementById('email').value;
@@ -24,8 +23,4 @@ function printForm(event) {
     formSubmit.comments = document.getElementById('comments').value;
 
     console.log(formSubmit);
-}
-if(null) {
-    alert("Please fill otu the form before submitting");
-}
 };
