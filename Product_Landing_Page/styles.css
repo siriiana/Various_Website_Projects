@@ -1,0 +1,134 @@
+body {
+    background-image: url("abstract-2468874_1920.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+nav {
+    background-color: rgba(240, 0, 136, 0.9);
+    display: flex;
+    flex-direction: row;
+    min-height: 90px;
+    color: white;
+
+}
+.upper-nav {
+    align-items: flex-start;
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center
+}
+img {
+    max-height: 50px;
+    max-height: auto;
+    object-fit: contain;
+    flex: 0.2;
+    text-align: right;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-left: 15px;
+}
+#header {
+    flex: 1;
+    padding-left: 10px;
+    text-align: left;
+}
+.lower-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+.header-item {
+    padding: 10px;
+}
+#page-content {
+    display: flex;
+    flex-direction: row;
+}
+.sides {
+    flex: 1;
+}
+#content {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    padding: 50px;
+    justify-content: space-evenly;
+
+}
+#form, #features, #prices, #video {
+    min-width: 100%;
+    margin: 10px;
+    background-color: rgba(51, 255, 197, 0.9);
+    text-align: center;
+}
+
+#features {
+    justify-content: space-evenly;
+    text-align: left;
+}
+#feature1, #feature2, #feature3 {
+    padding: 10px;
+    border: maroon;
+    border: solid;
+    display: flex;
+    flex-direction: row;
+    min-height: 100px;
+    margin: 10px;
+}
+.text {
+    display: flex;
+    flex-direction: column;
+}
+#prices {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    padding: 25px;
+}
+#video, #features, #form {
+    padding: 25px;
+} 
+#price1, #price2, #price3 {
+    padding: 10px;
+    border: maroon;
+    border: solid;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+footer {
+    min-height: 100px;
+    background-color: rgba(22, 63, 116, 0.9);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    color: white;
+}
+.footer-item {
+    padding: 10px;
+}
+.upper {
+    display: flex;
+    flex-direction: row;
+}
+button {
+    text-align: center;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border: none;
+    padding: 15px, 32px;
+}
+
+@media all {
+    html, body{height:100%;} 
+    #main{
+    min-height:100%;
+    }
+    body, p { margin:0; padding:0}
+}
