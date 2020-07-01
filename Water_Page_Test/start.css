@@ -37,6 +37,7 @@ button {
     100%{opacity: 0%;
     visibility: hidden;}    
 }
+/*Plays even when button not pressed? */
 @keyframes main {
     0% {opacity: 0%;
     visibility: hidden;}
